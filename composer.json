@@ -1,0 +1,26 @@
+{
+    "name": "romston/templated-xml-parser",
+    "description": "Templated xml parser",
+    "keywords": [
+        "xml",
+        "parser",
+        "template"
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "ext-simplexml": "*"
+    },
+    "authors": [
+        {
+            "name": "Roman Vedenkin",
+            "email": "romston.zzz@gmail.com"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "romston\\TemplatedXmlParser\\": ""
+        }
+    }
+}
