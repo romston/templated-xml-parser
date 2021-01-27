@@ -67,6 +67,17 @@ class Parser
             return (int)$value;
         }
         
+        if ($type === 'bool' || $type === 'boolean') {
+            if (strtolower($value) === 'true') {
+                return true;
+            }
+
+            if (strtolower($value) === 'false') {
+                return false;
+            }
+            return self::$default;
+        }
+        
         // For unknown types.
         return $value;
     }
